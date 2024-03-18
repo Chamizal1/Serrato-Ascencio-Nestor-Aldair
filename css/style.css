@@ -1,0 +1,100 @@
+
+body {
+    background-image: url(../img/Fondo_G.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Estilos para el menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    height: 500px;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+a {
+    color: #007bff; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #dc3545;
+}
+.Fondo_1{
+    background-image: url(../img/Fondo_1.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+.Fondo_2{
+    background-image: url(../img/Fondo_2.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.Fondo_3{
+    background-image: url(../img/Fondo_3.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.Fondo_4{
+    background-image: url(../img/Fondo_4.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+/*
+Ñ
+-CHZ
+*/
