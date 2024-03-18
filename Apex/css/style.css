@@ -1,0 +1,195 @@
+
+
+
+header, footer {
+    background-color: #f97b2e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+section {
+    background-color:#B21515;
+    width: 100%;
+    height: 800px;;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+section:nth-child(odd) {
+    background-color: #861414;
+}
+
+section:nth-child(even) {
+background-color: #B21515;
+}
+
+/* Limpiar floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Estilos para la sección 1 */
+.section1-content {
+    display: flex;
+}
+
+.rectangle, .image {
+    flex: 1; /* Distribuir el espacio disponible */
+}
+
+.rectangle {
+    padding: 20px;
+    background-color:#A4373D ;
+}
+
+.image {
+    margin-left: 20px; /* Espacio entre el rectángulo y la imagen */
+}
+
+.image img {
+    max-width: 100%;
+}
+/* Estilos para la sección 2 */
+.section2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.centered-rectangle {
+    background-color:#f97b2e;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre el rectángulo centrado y los rectángulos de abajo */
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las columnas se envuelvan en múltiples filas */
+    justify-content: center; /* Centrar las columnas horizontalmente */
+}
+
+.column {
+    flex: 1; /* Que cada columna tome igual espacio */
+    max-width: 200px; /* Ancho máximo para evitar que las columnas se hagan demasiado grandes */
+}
+
+.rectangle {
+    padding: 20px;
+    margin: 0 10px 10px 0; /* Espacio entre los rectángulos y entre las columnas */
+    box-sizing: border-box; /* Incluir el margen y el relleno en el ancho y alto del elemento */
+}
+
+/* Estilos para la sección 3 */
+.so3{
+    height: 1200px;
+
+}
+.section3-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    
+}
+
+.rectangle {
+    padding: 20px;
+    text-align: center; /* Centra el contenido dentro de cada rectángulo */
+}
+
+.rectangle img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para la sección 4 */
+.section4-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.centered-rectangle {
+
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre el rectángulo centrado y los rectángulos de abajo */
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1; /* Que cada columna tome igual espacio */
+}
+
+.rectangle {
+
+    padding: 20px;
+    margin-bottom: 10px; /* Espacio entre los rectángulos */
+}
+/* Estilos para la sección 5 */
+.section5-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+.rectangle_1  img{
+width: 500px;
+height: 417px;
+}
+.centered-rectangle_1 {
+
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre el rectángulo centrado y los rectángulos de abajo */
+}
+
+.columns_1{
+    display: flex;
+}
+
+.column-1{
+    flex: 1; /* Que cada columna tome igual espacio */
+}
+
+.rectangle-1{
+    background-color: #A4373D;
+    padding: 20px;
+    margin-bottom: 10px; /* Espacio entre los rectángulos */
+    width: 450px;
+}
+
