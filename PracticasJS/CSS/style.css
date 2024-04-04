@@ -1,0 +1,29 @@
+*{
+background-color: rgb(54, 7, 54);
+text-align: center;
+
+}
+form{
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+h1{
+    background-color: white;
+}
+p{
+    background-color: white;
+    color: rgb(54, 7, 54);
+}
+label{
+    background-color: white;
+    color: rgb(54, 7, 54);
+}
+input{
+    background-color: white;
+    color: rgb(54, 7, 54);
+}
+button{
+    background-color: white;
+    color: rgb(54, 7, 54);
+}

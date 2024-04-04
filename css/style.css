@@ -81,6 +81,13 @@ a:hover {
     background-position: center;
     display: flex;
     }
+.Cuadrado{
+background-color:#FF9130;
+color: #020205;
+width: 50%;
+text-align: center;
+}
+
 .Fondo_3{
     background-color: #111F4D;
     background-size: cover;
