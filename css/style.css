@@ -81,23 +81,6 @@ a:hover {
     background-position: center;
     display: flex;
     }
-.Cuadrado{
-background-color:#FF9130;
-color: #020205;
-width: 50%;
-text-align: center;
-}
-.Cuadrado1{
-    background-color: #FF9130;
-    color: #020205;
-    margin-left: 10px;
-    width: 50%;
-    text-align: center;
-}
-.Cuadrado1 img{
-width: 80%;
-height: 85%;
-}
 .Fondo_3{
     background-color: #111F4D;
     background-size: cover;
