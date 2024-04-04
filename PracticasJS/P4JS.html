@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calificación Final</title>
+    <script src="./JS/val4.js""></script>
+
+</head>
+<body>
+    <h1>Calculadora de Calificación Final</h1>
+    <form id="formulario">
+        <label for="promedio">Promedio de calificaciones:</label>
+        <input type="number" id="promedio" step="0.01" placeholder="Ingrese el promedio">
+        <br>
+        
+        <label for="examen">Calificación del examen:</label>
+        <input type="number" id="examen" step="0.01" placeholder="Ingrese la calificación del examen">
+        <br>
+        
+        <label for="trabajo">Calificación del trabajo:</label>
+        <input type="number" id="trabajo" step="0.01" placeholder="Ingrese la calificación del trabajo">
+        <br>
+        
+        <button type="button" onclick="calcularCalificacionFinal()">Calcular Calificación Final</button>
+        <p id="final"></p>
+    </form>
+    
+
+</body>
+</html>
