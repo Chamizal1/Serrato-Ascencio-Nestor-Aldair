@@ -1,0 +1,40 @@
+body{
+    background-image: url(../principal.png);
+    background-size: cover;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+} 
+
+a{
+    color:#630000;
+}
+.item {
+    width: 150px;
+    height: auto;
+    border: 1px solid #4B7681;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    color: white;
+}
+
+.item p {
+    display: none; /* Inicialmente oculta el texto */
+}
+.item:hover p {
+    display: block; /* Muestra el texto cuando se pasa el cursor sobre el elemento */
+}
+.texto-superpuesto{
+    color:#630000;
+    text-align: center;
+    border: 1px solid #4B7681;
+}
