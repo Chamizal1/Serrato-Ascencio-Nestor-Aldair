@@ -1,21 +1,25 @@
-body{
-    background-image: url(../principal.png);
-    background-size: cover;
+body {
+    background-color: #111; /* Color de fondo */
+    color: #ffd700; /* Color del texto */
+    margin: 0;
+    padding: 0;
 }
+
 .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
 } 
 
-a{
-    color:#630000;
+a {
+    color: #ffd700; /* Color del enlace */
 }
+
 .item {
     width: 150px;
     height: auto;
-    border: 1px solid #4B7681;
+    border: 1px solid #ffd700; /* Color del borde */
     margin: 10px;
     padding: 20px;
     display: flex;
@@ -24,17 +28,18 @@ a{
     align-items: center;
     overflow: hidden;
     transition: height 0.3s ease;
-    color: white;
 }
 
 .item p {
     display: none; /* Inicialmente oculta el texto */
 }
+
 .item:hover p {
     display: block; /* Muestra el texto cuando se pasa el cursor sobre el elemento */
 }
-.texto-superpuesto{
-    color:#630000;
+
+.texto-superpuesto {
+    color: #ffd700; /* Color del texto superpuesto */
     text-align: center;
-    border: 1px solid #4B7681;
+    border: 1px solid #ffd700; /* Color del borde */
 }
