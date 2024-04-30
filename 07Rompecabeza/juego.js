@@ -140,6 +140,14 @@ function moverDireccion(direccion){
     }
 }
 
+
+var codigosDireccion = {
+    IZQUIERDA : 37,
+    ARRIBA : 40,
+    DERECHA : 39,
+    ABAJO : 38
+};
+
 function intercambiarPociciones(fila1, columna1, fila2, columna2){
     var pieza1 = rompe[fila1][columna1];
     var pieza2 = rompe[fila2][columna2];
@@ -165,9 +173,74 @@ var elementoPieza2 = document.getElementById(idpieza2);
  padre.replaceChild(cloneElemento2, elementoPieza1);
 }
 
-var codigosDireccion = {
-    IZQUIERDA : 37,
-    ARRIBA : 38,
-    DERECHA : 39,
-    ABAJO : 40
-};
+//saber la actualizaion de los mov
+
+function actualizarUltimo(direccion){
+    var ultimoMovimineto = document.getElementById('flecha');
+    switch(direccion){
+        case codigosDireccion.ABAJO:
+            ultimoMovimineto.textContent = '⬆';
+            break;case codigosDireccion.ARRIBA:
+            ultimoMovimineto.textContent = '⬇';
+            break;case codigosDireccion.IZQUIERDA:
+            ultimoMovimineto.textContent = '⬅';
+            break;case codigosDireccion.DERECHA:
+            ultimoMovimineto.textContent = '➡';
+            break;
+    }
+}
+
+function mezclarPiezas(veces){
+    if (veces <= 0) {
+        alert("Asi no se puede");
+        return
+    }
+    var direcciones = [codigosDireccion.ARRIBA, codigosDireccion.ABAJO  , codigosDireccion.IZQUIERDA, codigosDireccion.DERECHA];
+
+var direccion1 = direcciones[Math.floor(Math.random() * direcciones.length)]
+
+setTimeout(function(){
+    mezclarPiezas(veces -1);
+},100);
+}
+
+
+
+//necesitamos saber que teclas esta oprimiendo el usuario
+
+function capturarTeclas(){
+    //usamos onKeydown
+
+    document.body.onkeydown = (function(evento){
+        if (evento.which === codigosDireccion.ABAJO || evento.which === codigosDireccion.ARRIBA || evento.which === codigosDireccion.IZQUIERDA || evento.which === codigosDireccion.DERECHA ) {
+            moverDireccion(evento.which);
+            actualizarUltimo(evento.which);
+
+            var gano = checharSiGano();
+            if(gano){
+                setTimeout(function(){
+                    mostrarCartelGanador();
+                },500)
+            }
+            evento.preventDefault;
+        }
+    });
+
+    
+}
+
+
+
+//ahora para iniciar el juego
+
+function iniciar(){
+    mezclarPiezas(30);
+    capturarTeclas()
+}
+
+iniciar();
+
+//mando a llmar instrucciones
+
+mostrarInstrucciones(instruccion);
+
